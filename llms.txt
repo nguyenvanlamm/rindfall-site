@@ -6,4 +6,4 @@
 ## Pages
 - [Home](https://nguyenvanlamm.github.io/rindfall-site/index.html.md): what the game is, caves, helpers, purchases
 - [Support](https://nguyenvanlamm.github.io/rindfall-site/support.html.md): contact, how to play, restoring purchases
-- [Privacy Policy](https://nguyenvanlamm.github.io/rindfall-site/privacy.html.md): nothing collected; local progress only
+- [Privacy Policy](https://nguyenvanlamm.github.io/rindfall-site/privacy.html.md): nothing collected; local progress only; also opens from the game's Settings → Privacy Policy
