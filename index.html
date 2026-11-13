@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rindfall: a sieve puzzle in a cheese cellar</title>
+<meta name="description" content="Rindfall is a physics puzzle for iPhone: slide perforated copper sieves so cheeses drop by size into the right crates. 60 levels in 4 caves, no ads, plays offline.">
+<link rel="canonical" href="https://nguyenvanlamm.github.io/rindfall-site/">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="alternate" type="text/markdown" href="index.html.md">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rindfall: a sieve puzzle in a cheese cellar">
+<meta property="og:description" content="Rindfall is a physics puzzle for iPhone: slide perforated copper sieves so cheeses drop by size into the right crates. 60 levels in 4 caves, no ads, plays offline.">
+<meta property="og:url" content="https://nguyenvanlamm.github.io/rindfall-site/">
+<meta property="og:image" content="https://nguyenvanlamm.github.io/rindfall-site/assets/share-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  @font-face { font-family: "Cormorant"; src: url("assets/fonts/cormorant_garamond_medium.ttf"); font-weight: 500; font-display: swap; }
+  @font-face { font-family: "Cormorant"; src: url("assets/fonts/cormorant_garamond_semibold.ttf"); font-weight: 600; font-display: swap; }
+  @font-face { font-family: "Cormorant"; src: url("assets/fonts/cormorant_garamond_medium_italic.ttf"); font-weight: 500; font-style: italic; font-display: swap; }
+  :root { --bg: #0D0C0A; --panel: #15130F; --ink: #ECE6D6; --muted: #B5AE9F; --wine: #6B2335; --wine-hi: #D99AA8; --copper: #E7A07A; --line: #2A2620; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 19px/1.55 "Cormorant", Georgia, serif; font-weight: 500; }
+  a { color: var(--copper); }
+  .muted { color: var(--muted); }
+  h1, h2, h3 { font-weight: 600; line-height: 1.15; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header.hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 56px 0 40px; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+  .brand img { width: 64px; height: 64px; border-radius: 14px; }
+  .brand span { font-size: 22px; letter-spacing: .04em; font-variant: small-caps; color: var(--muted); }
+  h1 { font-size: clamp(44px, 7vw, 76px); margin: 0 0 14px; }
+  .lede { font-style: italic; font-size: 24px; color: var(--muted); margin: 0 0 26px; }
+  .cta { display: inline-block; padding: 14px 26px; background: var(--wine); color: var(--ink); text-decoration: none;
+         border: 1px solid rgba(236,230,214,.32); outline: 4px solid var(--wine); border-radius: 4px; font-size: 22px; font-weight: 600; }
+  .cta small { display: block; font-size: 15px; font-weight: 500; font-style: italic; color: var(--wine-hi); }
+  .phone { width: 100%; max-width: 360px; justify-self: center; border: 1px solid var(--line); border-radius: 22px; }
+  section { padding: 36px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 36px; margin: 0 0 18px; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; padding: 0; list-style: none; margin: 0; }
+  .steps li { background: var(--panel); border: 1px solid var(--line); padding: 20px; border-radius: 6px; }
+  .steps b { display: block; font-size: 24px; color: var(--copper); margin-bottom: 4px; }
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; border: 1px solid var(--line); border-radius: 16px; display: block; }
+  .shots figcaption { text-align: center; font-style: italic; color: var(--muted); margin-top: 8px; }
+  .caves { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 0; list-style: none; margin: 0; }
+  .caves li { background: var(--panel); border: 1px solid var(--line); padding: 16px 20px; border-radius: 6px; }
+  .caves b { font-size: 24px; } .caves i { color: var(--muted); display: block; }
+  .facts { columns: 2; padding-left: 20px; }
+  footer { padding: 32px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 17px; }
+  footer a { margin-right: 18px; }
+  @media (max-width: 760px) {
+    header.hero { grid-template-columns: 1fr; padding-top: 32px; }
+    .steps, .shots { grid-template-columns: 1fr; }
+    .caves { grid-template-columns: 1fr; }
+    .facts { columns: 1; }
+  }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoGame","name":"Rindfall","description":"Rindfall is a physics puzzle for iPhone: slide perforated copper sieves so cheeses drop by size into the right crates. 60 levels in 4 caves, no ads, plays offline.",
+"url":"https://nguyenvanlamm.github.io/rindfall-site/","image":"https://nguyenvanlamm.github.io/rindfall-site/assets/share-card.jpg","operatingSystem":"iOS","applicationCategory":"GameApplication",
+"genre":"Puzzle","gamePlatform":"iPhone",
+"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div>
+    <div class="brand"><img src="assets/icon.webp" alt="Rindfall app icon" width="64" height="64"><span>for iPhone</span></div>
+    <h1>Rindfall</h1>
+    <p class="lede">A sieve puzzle in a cheese cellar. Slide the copper sieves, and every cheese drops into the crate made for its size.</p>
+    <p>Bites slip through the fine holes. Rounds fall through the coarse ones. Wheels wait for the sieve to open all the
+      way. Get the order wrong and a crate spoils; get it right and the whole cellar is ripe.</p>
+    <p class="cta" role="note">Coming soon to the App Store<small>free to play · no ads · offline</small></p>
+  </div>
+  <img class="phone" src="assets/game.webp" alt="A Rindfall cave: a copper sieve holding two Round cheeses above a Bites crate and a Rounds crate" width="390" height="844">
+</header>
+
+<section>
+  <h2>How it plays</h2>
+  <ol class="steps">
+    <li><b>Slide a sieve</b>Drag a copper plate, or tap a zone on its strip: solid, fine, coarse or open.</li>
+    <li><b>Let them fall</b>Each cheese drops only through holes it fits. Lids close on full crates and become ramps.</li>
+    <li><b>Fill every crate</b>Each crate takes its own size and count. All full is Ripe!; a wrong size spoils it.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Four caves, sixty levels</h2>
+  <ul class="caves">
+    <li><b>The Sieves</b><i>Fine, coarse and open zones. Free.</i></li>
+    <li><b>The Rockers</b><i>Seesaw flaps that only a Wheel tips open.</i></li>
+    <li><b>The Brine</b><i>A brine bath where Bites float and the rest sink.</i></li>
+    <li><b>Market Day</b><i>Mixed orders: crates that take two sizes.</i></li>
+  </ul>
+  <p class="muted">Every level is checked by a solver before it ships, so every cave can be cleared.</p>
+</section>
+
+<section>
+  <h2>In the cellar</h2>
+  <div class="shots">
+    <figure><img src="assets/win.webp" alt="The Ripe! panel after every crate is full" loading="lazy" width="390" height="844"><figcaption>Every crate full: Ripe!</figcaption></figure>
+    <figure><img src="assets/home.webp" alt="The Rindfall home screen with the four caves" loading="lazy" width="390" height="844"><figcaption>Four caves to clear</figcaption></figure>
+    <figure><img src="assets/shop.webp" alt="The Cellar Shop with Deep Cellars and the Tasting Board" loading="lazy" width="390" height="844"><figcaption>The Cellar Shop</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Fair by design</h2>
+  <ul class="facts">
+    <li>No ads, no timers, no lives.</li>
+    <li>Plays offline; nothing leaves your phone.</li>
+    <li><b>Rewind</b> takes back your last slide.</li>
+    <li><b>Peek</b> chalks the next right slide.</li>
+    <li>Helpers are earned on levels 5, 10 and 15 of each cave.</li>
+    <li>The first cave is free. <b>Deep Cellars</b> opens the other three; the <b>Tasting Board</b> adds 5 Rewinds and 5 Peeks.</li>
+  </ul>
+</section>
+
+<footer>
+  <a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a>
+  <p>© 2026 Rindfall. An original game: its art, sounds and levels are made for it. Typeface: Cormorant Garamond (SIL Open Font License).</p>
+</footer>
+</div>
+</body>
+</html>

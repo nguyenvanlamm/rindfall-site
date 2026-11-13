@@ -1,0 +1,9 @@
+# Rindfall
+
+> A sieve puzzle in a cheese cellar. An iPhone physics puzzle: slide perforated copper sieves so cheeses (Bite, Round, Wheel) drop by size
+> into the right crates. 60 solver-checked levels in 4 caves, no ads, offline. Coming soon to the App Store.
+
+## Pages
+- [Home](https://nguyenvanlamm.github.io/rindfall-site/index.html.md): what the game is, caves, helpers, purchases
+- [Support](https://nguyenvanlamm.github.io/rindfall-site/support.html.md): contact, how to play, restoring purchases
+- [Privacy Policy](https://nguyenvanlamm.github.io/rindfall-site/privacy.html.md): nothing collected; local progress only
