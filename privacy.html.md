@@ -1,6 +1,6 @@
 # Rindfall Privacy Policy
 
-Last updated 2026-11-13.
+Last updated 2026-11-13. In the game, open it from Settings → Privacy Policy.
 
 - Stored on the device only: cleared levels, Rewind and Peek counts, the sound setting, Deep Cellars ownership and
   delivered purchases. Deleting the app removes it.
